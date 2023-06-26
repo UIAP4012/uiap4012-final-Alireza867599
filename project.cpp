@@ -56,3 +56,13 @@ void register_user() {
     ofstream file("d:\\project2\\users.txt", ios::app);
     file<< "user name is :"<< user.username<< " and password is : " << user.password << endl;
 }
+class Product {
+public:
+    int id;
+    double price;
+    int quantity;
+    string name;
+
+    Product(int id, double price, int quantity, string name)
+        : id(id), price(price), quantity(quantity), name(name) {}
+};
